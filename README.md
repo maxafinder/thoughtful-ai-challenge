@@ -5,13 +5,13 @@
 
 Linux/macOS:
 ```shell
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 Windows:
 ```shell
-python -m venv .venv
+python3 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -21,4 +21,5 @@ pip install -r requirements.txt
 ```shell
 coverage run -m unittest discover tests
 coverage report
+deactivate
 ```
